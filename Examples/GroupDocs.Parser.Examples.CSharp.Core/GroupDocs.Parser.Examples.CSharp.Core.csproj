@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <Import Project="..\GroupDocs.Parser.Examples.CSharp\GroupDocs.Parser.Examples.CSharp.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.OCR" Version="22.11.0" />
+    <PackageReference Include="GroupDocs.Parser" Version="26.8.0" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.112" />
+    <PackageReference Include="Aspose.Drawing.Common" Version="26.3.0">
+      <Aliases>AsposeDrawingCommon</Aliases>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Aspose.Drawing">
+      <HintPath>$(NuGetPackageRoot)aspose.ocr\22.11.0\lib\netstandard2.0\Aspose.Drawing.dll</HintPath>
+      <Aliases>OCR</Aliases>
+    </Reference>
+  </ItemGroup>
+</Project>
